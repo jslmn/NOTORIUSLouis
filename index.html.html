@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTORIUS LUIS | Official Website</title>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --accent: #00f2ff;
+            --bg-dark: #050505;
+            --glass: rgba(0, 0, 0, 0.85);
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * { box-sizing: border-box; transition: all 0.3s ease; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            /* IMAGEN DE MESA DE MEZCLAS PROFESIONAL - ENLACE DE ALTA DISPONIBILIDAD */
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), 
+                url('https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+        }
+
+        .container { max-width: 500px; margin: auto; padding: 60px 20px; position: relative; z-index: 1; }
+
+        header { text-align: center; margin-bottom: 50px; }
+        h1 { 
+            font-family: 'Syncopate', sans-serif; 
+            font-size: 1.8rem; 
+            letter-spacing: 8px; 
+            margin: 0; 
+            background: linear-gradient(to right, #fff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        .tag { 
+            display: block;
+            margin-top: 10px;
+            font-size: 0.7rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            opacity: 0.6;
+        }
+
+        .social-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 40px; }
+        .btn-social {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            padding: 14px;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        .btn-social:hover { 
+            background: var(--accent); 
+            color: #000; 
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 242, 255, 0.4);
+        }
+
+        .section-label { 
+            font-size: 0.65rem; 
+            letter-spacing: 3px; 
+            text-transform: uppercase; 
+            margin: 40px 0 15px; 
+            color: var(--accent);
+            font-weight: 700;
+            border-left: 2px solid var(--accent);
+            padding-left: 10px;
+        }
+        
+        .card { 
+            background: var(--glass); 
+            border: 1px solid var(--border); 
+            border-radius: 20px; 
+            padding: 25px; 
+            margin-bottom: 25px; 
+            backdrop-filter: blur(20px); 
+        }
+
+        .video-preview {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('https://img.youtube.com/vi/SQ08mHLVIcE/maxresdefault.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .video-preview i { font-size: 3.5rem; color: #fff; opacity: 0.9; }
+
+        .bio-text { font-size: 0.95rem; font-weight: 300; color: rgba(255,255,255,0.9); text-align: center; line-height: 1.8; }
+
+        .reels-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .reel-frame { aspect-ratio: 9/16; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+
+        .event-row { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 15px 0; 
+            border-bottom: 1px solid var(--border); 
+        }
+        .event-row:last-child { border: none; }
+        .event-city { font-weight: 700; font-size: 0.95rem; }
+        .event-status { font-size: 0.7rem; color: var(--accent); text-transform: uppercase; font-weight: bold; }
+
+        .contact-btn {
+            display: block; width: 100%; padding: 18px; background: transparent; 
+            border: 1px solid var(--accent); color: var(--accent); text-align: center; 
+            text-decoration: none; font-weight: 700; border-radius: 12px; margin-top: 10px;
+            letter-spacing: 2px;
+        }
+        .contact-btn:hover { background: var(--accent); color: #000; }
+
+        footer { text-align: center; opacity: 0.4; font-size: 0.65rem; margin-top: 80px; letter-spacing: 2px; padding-bottom: 40px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>NOTORIUS LUIS</h1>
+        <span class="tag">Ajotostado Collective</span>
+    </header>
+
+    <nav class="social-grid">
+        <a href="https://www.instagram.com/notoriusluis/" class="btn-social">INSTAGRAM</a>
+        <a href="https://www.twitch.tv/notoriouslouis" class="btn-social">TWITCH</a>
+        <a href="https://x.com/Luisaloentra" class="btn-social">TWITTER</a>
+        <a href="https://www.instagram.com/ajotostado/" class="btn-social">COLLECTIVE</a>
+    </nav>
+
+    <div class="section-label">Profile</div>
+    <div class="card">
+        <p class="bio-text">
+            DJ based in Spain. Exploring the depths of <strong>Melodic Techno, HardGroove, and Eurodance</strong>. Founder of <strong>Ajotostado Collective</strong>.
+        </p>
+    </div>
+
+    <div class="section-label">Featured Set</div>
+    <div class="card" style="padding: 10px;">
+        <a href="https://www.youtube.com/watch?v=SQ08mHLVIcE" target="_blank" class="video-preview">
+            <i class="fas fa-play-circle"></i>
+        </a>
+    </div>
+
+    <div class="section-label">Upcoming Shows</div>
+    <div class="card">
+        <div class="event-row">
+            <div class="event-city">Badajoz, ES</div>
+            <div class="event-status">Coming Soon</div>
+        </div>
+        <div class="event-row">
+            <div class="event-city">Madrid, ES</div>
+            <div class="event-status">Coming Soon</div>
+        </div>
+    </div>
+
+    <div class="section-label">Highlights</div>
+    <div class="card">
+        <div class="reels-grid">
+            <div class="reel-frame">
+                <iframe src="https://www.instagram.com/p/DUda5aOCJ5y/embed" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="reel-frame">
+                <iframe src="https://www.instagram.com/reel/DTf2781CLBU/embed" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-label">Bookings & Contact</div>
+    <div class="card">
+        <a href="mailto:contact@notoriusluis.com" class="contact-btn">SEND EMAIL</a>
+        <a href="https://www.instagram.com/notoriusluis/" class="contact-btn" style="border-color: rgba(255,255,255,0.3); color: #fff;">DIRECT MESSAGE</a>
+    </div>
+
+    <footer>
+        &copy; 2026 NOTORIUS LUIS // TECHNO ARCHIVE<br>
+        DESIGNED FOR HIGH VOLTAGE SETS
+    </footer>
+</div>
+
+</body>
+</html>
